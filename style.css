@@ -1,7 +1,7 @@
 :root{
     /* color & bg-color */
     --primary:#00bcd4;
-    --bg-page:#8fd6d6;
+    --bg-page: rgb(140, 240, 243);
     --bg-dark:#1f1f1f;
     --bg-nav:#0f1720;
 
@@ -22,6 +22,7 @@
     --space-12:48px;
     --space-16:64px;
     --space-24:96px;
+    --space-32:128px;
 
     /* border radius */
     --radius-1:4px;
@@ -47,13 +48,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--bg-dark);
+    font-family: sans-serif;
+}
 
 .container{
     /* height: 100vh; */
     width: 100wh;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: grid;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 88px 12fr;
     /* row-gap: 2rem; */
 }
 .head{
@@ -89,15 +94,19 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: var(--space-32);
     /* display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 2fr 1fr;
     justify-content: center; */
     /* row-gap: 2rem; */
-    position: relative;
+    /* position: relative; */
 }
-h1{
+.h{
     margin-top: 5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
 }
 .box{
     height: 45vh;
@@ -144,4 +153,43 @@ button{
     position: absolute;
     bottom: 2rem;
     right: 10px;
+}
+
+
+.why-amd{
+    /* margin-top: var(--space-12); */
+    margin-bottom: var(--space-32);
+    padding-bottom: var(--space-32);
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+.why-head{
+    margin-bottom: var(--space-12);
+}
+.div-table{
+    /* background-color: aquamarine; */
+    width: 80vw;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+thead{
+    margin-bottom: 20px;
+}
+thead th{
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: var(--text-lg);
+}
+.why-amd-btn{
+    /* padding:20px; */
+    width: 250px;
+    height: 60px;
+}
+.btn-div{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-24);
 }
