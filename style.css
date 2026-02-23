@@ -2,7 +2,7 @@
     /* color & bg-color */
     --primary:#00bcd4;
     --bg-page: rgb(140, 240, 243);
-    --bg-dark:#1f1f1f;
+    --bg-dark:black;
     --bg-nav:#0f1720;
 
     --text-main:#ffffff;
@@ -33,7 +33,7 @@
     /* shadow */
     --shadow-sm:0 2px 6px rgba(0,0,0,0.15);
     --shadow-md:0 8px 20px rgba(0,0,0,0.2);
-    --shadow-md:0 20px 40px rgba(0,0,0,0.25);
+    --shadow-lg:0 20px 40px rgba(0,0,0,0.25);
 
     /* Font-size */
     --text-sm:14px;
@@ -100,17 +100,25 @@ a img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: var(--space-32);
+    padding-bottom: 14rem;
+    background-image: url(./img/image11.png);
+    background-position:center;
+    background-size: cover;
+    /* scale: calc(2); */
+    /* background-size: 200%; */
 }
 .h{
     margin-top: 5rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
     text-align: center;
+    color: var(--text-main);
 }
 .box{
-    height: 63vh;
+    /* height: 63vh; */
+    min-height: 450px;
     width: 86vw;
+    max-width: 1400px;
     background-color: black;
     margin-top: 4rem;
     border-radius: 1rem;
@@ -127,12 +135,12 @@ a img{
     /* background-repeat: no-repeat; */
 }
 .btn{
-    width:13%;
-    height: 15%;
+    width:155px;
+    height: 55px;
     margin-top: 1rem;
     color: white;
     background-color: black;
-    border: 2px solid Rgb(140, 240, 243);
+    border: 1px solid #00c2de;
     font-weight: bold;
     font-size: large;
 }
@@ -168,14 +176,17 @@ button{
     padding-bottom: var(--space-32);
     background-color: var(--bg-dark);
     color: var(--text-main);
+    /* border: 2px solid yellow; */
 }
 .why-head{
     margin-bottom: var(--space-12);
     color: var(--text-main);
+    margin-top: 0;
     /* background-color: red; */
 }
 .div-table{
-    width: 87vw;
+    width: 86vw;
+    max-width: 1400px;
     margin: 0 auto;
     /* display: flex;
     justify-content: space-between; */
@@ -212,37 +223,297 @@ button{
 }
 
 
-
-
-
-
+/*<!-- 3rd page of AMD layout --> */
 .trust-amd{
-    margin-top: -90px;
+    /* margin-top: -90px; */
+    /* border: 5px solid red; */
+    padding-bottom: var(--space-32);
+    background-image: url(./img/image3.jpg);
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: var(--shadow-lg); */
 }
 .trust-amd-box{
     width: 80vw;
-    background-color: rgb(54, 54, 54);
+    max-width: 1400px;
+    /* background-color: rgb(54, 54, 54); */
     height: 200px;
     margin: 0 auto;
 }
+.trust-amd-head{
+    color: var(--text-main);
+    /* background-color: red; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
 
+
+
+/* <!-- 4th page of AMD layout --> */
 .amd-portfolio{
-    margin-top: var(--space-32);
+    /* margin-top: var(--space-32); */
+    padding-top: 50px;
+    /* border: 5px solid yellow; */
+    background-image: url(./img/image8.jpg);
+    background-size: cover;
+    /* background-position: center; */
+
 }
 .amd-portfolio-div{
-    width: 80vw;
+    width: 86vw;
+    max-width: 1400px;
     height: 600px;
     margin: 0 auto;
     /* background-color: red; */
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 .amd-portfolio-box{
-    height: 550px;
+    height: 480px;
     width: 24%;
-    background-color: #00bcd4;
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 5px rgb(59, 59, 59);
+    border-radius: 5px;
+}
+.amd-portfolio-para{
+    color:rgb(147, 143, 143);
+    text-align: center;
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-6);
+}
+.port-h{
+    margin-bottom: var(--space-6);
+}
+img{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.box2{
+    color: var(--text-main);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box3 a{
+    color: #2899ff;
+}
+.box3{
+    padding: 0 15px;
+    /* background-color: red; */
+}
+.box3 nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.anchor-2{
+    margin-top: 65px;
+}
 
+
+
+/* <!-- 5th page of AMD layout --> */
+.dev-central{
+    margin:var(--space-12) 0 ;
+    /* width: 100%; */
+    /* background-color: red; */
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    background-image: url(./img/image9.jpg);
+    background-size: cover;
+}
+.dev-central-div{
+    width: 86vw;
+    max-width: 1500px;
+    height: 400px;
+    /* margin: 0 auto; */
+    /* background-color: red; */
+    /* border: 1px solid rgb(223, 219, 219); */
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: end;
+    padding-left: 800px;
+}
+.dev-central-article{
+    height: 80%;
+    width: 86%;
+    /* background-color: #00bcd4; */
+    /* margin-right: 85px; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.dev-central-h{
+    color: var(--text-main);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.dev-btn{
+    /* width: 300px; */
+    margin-top: 35px;
+    padding: 18px 40px;
+    background-color: black;
+    text-decoration: none;
+    border: 1px solid rgb(30, 154, 221);
+}
+.dev-btn:hover{
+    background-color: #38767e;
+    text-decoration: underline;
+}
+.dev-para{
+    color: white;
+    font-size: var(--text-lg);
+}
+
+
+
+
+/* <!-- 6th page of AMD layout --> */
+.sec-news{
+    margin-top: var(--space-16);
+    /* height: 500px; */
+    width: 100%;
+    background-color: black;
+    /* border: 1px solid gray; */
+    /* border: 1px solid #ff0000; */
+    padding-bottom: 200px;
+    background-image: url(./img/image10.jpg);
+    background-size:contain;
+    background-position:bottom;
+    background-repeat: no-repeat;
+}
+.sec-news-h3{
+    color: var(--text-main);
+    /* margin-left: 89px; */
+    /* margin-bottom: 20px; */
+    font-size: 1.7rem;
+}
+.sec-news-container{
+    width: 86vw;
+    max-width:1400px;
+    margin: 0 auto;
+
+}
+.sec-news-div{
+    width: 86vw;
+    max-width:1400px;
+    height: 400px;
+    margin: 0 auto;
+    /* background-color: red; */
+    /* border: 1px solid brown; */
+    display: flex;
+    gap:10px;
+    align-items: end;
+    justify-content: space-between;
+    /* padding: 0 15px; */
+}
+.sec-news-box{
+    height: 370px;
+    width: 25%;
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 5px rgb(59, 59, 59);
+    border-radius: 5px;
+}
+.sec-news-box3{
+    color: var(--text-muted);
+    /* background-color: red; */
+    margin-top: 20px;
+}
+.sec-news-p{
+    padding-top: 22px;
+}
+
+
+    
+/* <!-- 7th page of AMD layout --> */
+.sec-footer{
+    height: 570px;
+    width: 100%;
+    padding-top: 50px;
+    /* border: 1px solid red; */
+}
+.footer-div{
+    /* height: 100%; */
+    width: 86vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: black;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-div-top{
+    /* background-color: #00bcd4; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer-nav{
+    /* background-color: red; */
+    width: 31.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-div-bottom{
+    /* background-color: #4c5152; */
+    color: white;
+    padding: 20px;
+    padding-top: -40px;
+    /* width: 85%; */
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    color: #888a8b;
+}
+.copyright p:nth-child(2){
+    font-size: small;
+}
+.copyright p:nth-child(1){
+    font-size: 0.9rem;
+}
+.foot-btn{
+    background-color: #262727;
+    padding: 17px 40px;
+    border-top: 2px solid rgb(96, 94, 94);
+    border-right: 2px solid rgb(113, 112, 112);
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(59, 59, 59);
+    margin-left: 20px;
+}
+.footer-div-bottom table{
+    border-collapse: separate;
+    border-spacing: 70px 10px;
+}
+.footer-div-bottom th{
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: large;
+}
+.footer-div-bottom td{
+    color: #888a8b;
+    font-size: 0.99rem;
 }
