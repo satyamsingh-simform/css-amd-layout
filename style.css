@@ -471,7 +471,7 @@ img{
     text-align: left;
     font-size: large;
 }
-.footer-div-bottom td{
+.footer-div-bottom td a{
     color: #888a8b;
     font-size: 0.99rem;
 }
