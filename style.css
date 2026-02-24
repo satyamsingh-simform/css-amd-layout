@@ -53,12 +53,9 @@ body{
     font-family: sans-serif;
 }
 .container{
-    /* height: 100vh; */
     width: 100wh;
-    /* background-color: antiquewhite; */
     display: grid;
     grid-template-rows: 88px 12fr;
-    /* row-gap: 2rem; */
 }
 
 
@@ -71,7 +68,7 @@ body{
     align-items: center;
 }
 a{
-    color: white;
+    color:var(--text-main) ;
     text-decoration: none;
 }
 a img{
@@ -84,7 +81,6 @@ a img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: red; */
     padding-left: 30px;
 }
 .head-end{
@@ -92,11 +88,9 @@ a img{
     display: flex;
     justify-content: space-around;
     padding-right: 50px;
-    /* background-color: red; */
 }
 .content{
     background-color: rgb(140, 240, 243);
-    /* border: 5px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,8 +98,6 @@ a img{
     background-image: url(./img/image11.png);
     background-position:center;
     background-size: cover;
-    /* scale: calc(2); */
-    /* background-size: 200%; */
 }
 .h{
     margin-top: 5rem;
@@ -115,7 +107,6 @@ a img{
     color: var(--text-main);
 }
 .box{
-    /* height: 63vh; */
     min-height: 450px;
     width: 86vw;
     max-width: 1400px;
@@ -184,26 +175,18 @@ button{
     padding-bottom: var(--space-32);
     background-color: var(--bg-dark);
     color: var(--text-main);
-    /* border: 2px solid yellow; */
 }
 .why-head{
     margin-bottom: var(--space-12);
     color: var(--text-main);
     margin-top: 0;
-    /* background-color: red; */
 }
 .div-table{
     width: 86vw;
     max-width: 1400px;
     margin: 0 auto;
-    /* display: flex;
-    justify-content: space-between; */
-    /* background-color: red; */
 }
 
-/* .div-table head{
-    margin-bottom: 120px;
-} */
 .div-table th{
     padding-bottom: 20px;
     text-align: left;
@@ -212,19 +195,12 @@ button{
 .div-table td{
     padding-right: 40px;
     text-align: left;
-    /* font-size: var(--text-lg); */
 }
-/* .div-table table{
-    border-collapse: separate;
-    border-spacing: 20px 0;
-} */
 .why-amd-btn{
-    /* padding:20px; */
     min-width: 250px;
     height: 60px;
 }
 .btn-div{
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     margin-top: var(--space-24);
@@ -233,24 +209,19 @@ button{
 
 /*<!-- 3rd page of AMD layout --> */
 .trust-amd{
-    /* margin-top: -90px; */
-    /* border: 5px solid red; */
     padding-bottom: var(--space-32);
     background-image: url(./img/image3.jpg);
     background-size: cover;
     background-position: center;
-    /* box-shadow: var(--shadow-lg); */
 }
 .trust-amd-box{
     width: 80vw;
     max-width: 1400px;
-    /* background-color: rgb(54, 54, 54); */
     height: 200px;
     margin: 0 auto;
 }
 .trust-amd-head{
     color: var(--text-main);
-    /* background-color: red; */
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -262,12 +233,9 @@ button{
 
 /* <!-- 4th page of AMD layout --> */
 .amd-portfolio{
-    /* margin-top: var(--space-32); */
     padding-top: 50px;
-    /* border: 5px solid yellow; */
     background-image: url(./img/image8.jpg);
     background-size: cover;
-    /* background-position: center; */
 
 }
 .amd-portfolio-div{
@@ -275,8 +243,6 @@ button{
     max-width: 1400px;
     height: 600px;
     margin: 0 auto;
-    /* background-color: red; */
-    /* border: 1px solid brown; */
     display: flex;
     gap: 10px;
     align-items: center;
@@ -317,7 +283,6 @@ img{
 }
 .box3{
     padding: 0 15px;
-    /* background-color: red; */
 }
 .box3 nav{
     display: flex;
@@ -333,14 +298,11 @@ img{
 /* <!-- 5th page of AMD layout --> */
 .dev-central{
     margin:var(--space-12) 0 ;
-    /* width: 100%; */
-    /* background-color: red; */
     min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: end;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
     background-image: url(./img/image9.jpg);
     background-size: cover;
 }
@@ -348,11 +310,7 @@ img{
     width: 86vw;
     max-width: 1500px;
     height: 400px;
-    /* margin: 0 auto; */
-    /* background-color: red; */
-    /* border: 1px solid rgb(223, 219, 219); */
     display: flex;
-    /* gap: 10px; */
     align-items: center;
     justify-content: end;
     padding-left: 800px;
@@ -360,8 +318,6 @@ img{
 .dev-central-article{
     height: 80%;
     width: 86%;
-    /* background-color: #00bcd4; */
-    /* margin-right: 85px; */
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -373,7 +329,6 @@ img{
     font-weight: 600;
 }
 .dev-btn{
-    /* width: 300px; */
     margin-top: 35px;
     padding: 18px 40px;
     background-color: black;
@@ -395,11 +350,8 @@ img{
 /* <!-- 6th page of AMD layout --> */
 .sec-news{
     margin-top: var(--space-16);
-    /* height: 500px; */
     width: 100%;
     background-color: black;
-    /* border: 1px solid gray; */
-    /* border: 1px solid #ff0000; */
     padding-bottom: 200px;
     background-image: url(./img/image10.jpg);
     background-size:contain;
@@ -408,8 +360,6 @@ img{
 }
 .sec-news-h3{
     color: var(--text-main);
-    /* margin-left: 89px; */
-    /* margin-bottom: 20px; */
     font-size: 1.7rem;
 }
 .sec-news-container{
@@ -418,18 +368,24 @@ img{
     margin: 0 auto;
 
 }
-.sec-news-div{
+.sec-news-div-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-news-div-top a:hover{
+    text-decoration: underline;
+
+}
+.sec-news-div-bottom{
     width: 86vw;
     max-width:1400px;
     height: 400px;
     margin: 0 auto;
-    /* background-color: red; */
-    /* border: 1px solid brown; */
     display: flex;
     gap:10px;
     align-items: end;
     justify-content: space-between;
-    /* padding: 0 15px; */
 }
 .sec-news-box{
     height: 370px;
@@ -440,7 +396,6 @@ img{
 }
 .sec-news-box3{
     color: var(--text-muted);
-    /* background-color: red; */
     margin-top: 20px;
 }
 .sec-news-p{
@@ -456,39 +411,31 @@ img{
     height: 570px;
     width: 100%;
     padding-top: 50px;
-    /* border: 1px solid red; */
 }
 .footer-div{
-    /* height: 100%; */
     width: 86vw;
     max-width: 1400px;
     margin: 0 auto;
     background-color: black;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .footer-div-top{
-    /* background-color: #00bcd4; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 .footer-nav{
-    /* background-color: red; */
     width: 31.5%;
     display: flex;
     justify-content: space-between;
 }
 .footer-div-bottom{
-    /* background-color: #4c5152; */
     color: white;
     padding: 20px;
     padding-top: -40px;
-    /* width: 85%; */
     margin: auto;
-    /* border: 1px solid red; */
     margin-bottom: 50px;
 
 }
@@ -502,8 +449,9 @@ img{
 .copyright p:nth-child(2){
     font-size: small;
 }
-.copyright p:nth-child(1){
+.copyright a{
     font-size: 0.9rem;
+    color: #888a8b;
 }
 .foot-btn{
     background-color: #262727;
